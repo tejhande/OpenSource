@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+    <link rel="icon" href="logo.webp" type="image/gif">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        main {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 1s ease forwards; /* Fade-in animation */
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #777;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px); /* Move up slightly */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Move to original position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Free for Developers</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <p>Discover the best free services for developers and Open Source authors.</p>
+            <p>This is the content of the next page. Add your additional content here.</p>
+            <p>You can include any HTML elements, such as images, lists, etc.</p>
+            <p><a href="index.html" class="back-link">Go Back</a> to the previous page.</p>
+        </div>
+    </main>
+</body>
+</html>
